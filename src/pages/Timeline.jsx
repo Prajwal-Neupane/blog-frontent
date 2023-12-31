@@ -27,7 +27,7 @@ export const Timeline = () => {
   useEffect(() => {
     const fetchAllBlogs = async () => {
       const response = await axios.get(
-        "https://blogbackend-jesj.onrender.com/api/blogs"
+        "https://mern-backend-hvpy.onrender.com/api/blogs"
       );
       setData(response.data);
     };

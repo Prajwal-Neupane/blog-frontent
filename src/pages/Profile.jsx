@@ -10,7 +10,7 @@ export const Profile = () => {
   useEffect(() => {
     const fetchProfileBlogs = async () => {
       const response = await axios.get(
-        "https://blogbackend-jesj.onrender.com/api/userblogs",
+        "https://mern-backend-hvpy.onrender.com/api/userblogs",
         {
           headers: {
             Authorization: `Bearer ${token}`,

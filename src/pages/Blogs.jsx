@@ -18,7 +18,7 @@ const Blogs = ({ items }) => {
     const fetchAuthor = async () => {
       try {
         const response = await axios.get(
-          `https://blogbackend-jesj.onrender.com/api/user/getuser/${items.author}`
+          `https://mern-backend-hvpy.onrender.com/api/user/getuser/${items.author}`
         );
         setUser(response.data);
       } catch (error) {
@@ -36,7 +36,7 @@ const Blogs = ({ items }) => {
   const handleSubmit = async () => {
     try {
       const response = await axios.post(
-        `https://blogbackend-jesj.onrender.com/api/comment/${data._id}`,
+        `https://mern-backend-hvpy.onrender.com/api/comment/${data._id}`,
         {
           commentText,
         },
@@ -64,7 +64,7 @@ const Blogs = ({ items }) => {
       setLove(!love);
 
       const response = await axios.put(
-        `https://blogbackend-jesj.onrender.com/api/like/${items._id}`,
+        `https://mern-backend-hvpy.onrender.com/api/like/${items._id}`,
         {},
         {
           headers: {
